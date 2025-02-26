@@ -10,29 +10,37 @@
     <div class="container">
         <div class="logo">LOGO</div>
         <h2>Welcome to Trump Coin</h2>
-        
+
         <input type="radio" id="signup" name="form-toggle" checked>
         <input type="radio" id="signin" name="form-toggle">
-        
+
         <div class="form-container signup-form">
             <h3>Sign up</h3>
-            <form action="game.html">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button class="btn" type="submit">Sign up</button>
+            <form id="signup-form">
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <span class="toggle-password" data-target="signup-password">👁️</span>
+                </div>
+                <button class="btn" type="button" id="signup-btn">Sign up</button>
             </form>
             <label for="signin" class="switch-link">Already have an account? Sign in</label>
         </div>
 
         <div class="form-container signin-form">
             <h3>Sign in</h3>
-            <form action="game.html">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button class="btn" type="submit">Sign in</button>
+            <form id="signin-form">
+                <input type="email" id="signin-email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" id="signin-password" placeholder="Password" required>
+                    <span class="toggle-password" data-target="signin-password">👁️</span>
+                </div>
+                <button class="btn" type="button" id="signin-btn">Sign in</button>
             </form>
             <label for="signup" class="switch-link">Don't have an account? Sign up</label>
         </div>
     </div>
+    
+    <script src="script1.js"></script>
 </body>
 </html>
