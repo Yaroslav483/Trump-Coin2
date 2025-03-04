@@ -24,7 +24,9 @@
                 </div>
                 <button class="btn" type="button" id="signup-btn">Sign up</button>
             </form>
-            <label for="signin" class="switch-link">Already have an account? Sign in</label>
+            <label for="signin" class="switch-link">
+    Already have an account? <a href="#" onclick="document.getElementById('signin').checked = true; document.getElementById('signup').checked = false;">Sign in</a>
+</label>
         </div>
 
         <div class="form-container signin-form">
@@ -37,7 +39,9 @@
                 </div>
                 <button class="btn" type="button" id="signin-btn">Sign in</button>
             </form>
-            <label for="signup" class="switch-link">Don't have an account? Sign up</label>
+           <label for="signup" class="switch-link">
+    Don't have an account? <a href="#" onclick="document.getElementById('signup').checked = true; document.getElementById('signin').checked = false;">Sign up</a>
+</label>
         </div>
     </div>
     
