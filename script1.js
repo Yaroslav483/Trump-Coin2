@@ -3,21 +3,23 @@ const formData = {
     password: ""
 };
 
-
 document.querySelectorAll(".toggle-password").forEach(icon => {
     icon.addEventListener("click", function () {
         const inputId = this.getAttribute("data-target");
         const passwordInput = document.getElementById(inputId);
         
+        
         if (passwordInput.type === "password") {
             passwordInput.type = "text";
-            this.textContent = "🙈"; 
-            passwordInput.type = "password";
             this.textContent = "👁️";
+        } else {
+            passwordInput.type = "password";
+            this.textContent = "🙈"; 
         }
     });
 });
 
+  
 document.getElementById("signup-email").addEventListener("input", event => {
     formData.email = event.target.value;
 });
