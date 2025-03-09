@@ -1,109 +1,114 @@
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #ddd;
-            padding: 15px 30px;
-        }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            padding: 10px;
-            background: #e0e0e0;
-            border-radius: 5px;
-        }
-        .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-between;
-            background: #333;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 80%;
-        }
-        .stats div {
-            text-align: center;
-            flex: 1;
-        }
-        .game-container {
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-            margin: auto;
-        }
-        .shop {
-            width: 30%;
-        }
-        .shop-item {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .shop-item button {
-            padding: 5px 10px;
-            background: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .click-area {
-            width: 60%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .click-button {
-    width: 300px;
-    height: 300px;
-    background: #ddd;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 10px 20px;
+}
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-info .avatar {
+    width: 40px; /* Ширина аватарки */
+    height: 40px; /* Высота аватарки */
+    border-radius: 50%; /* Круглая форма */
+    margin-right: 10px; /* Отступ справа от аватарки */
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.shop {
+    width: 30%;
+}
+.shop .item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.game-stats {
+    width: 60%;
+    text-align: center;
+}
+.game-stats .stats-container {
+    display: flex; /* Устанавливаем флекс-контейнер */
+    justify-content: space-around; /* Распределяем элементы по горизонтали */
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center; /* Центрируем элементы по вертикали */
+    gap: 20px; /* Добавляем промежуток между элементами */
+}
+
+.game-stats .stats-container div {
+    text-align: center; /* Центрируем текст в каждой строке */
+    line-height: 1.5; /* Увеличиваем высоту строки */
+}
+.game-button {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background: lightgray;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.1s; 
-}
-.click-button img {
-    max-width: 80%; 
-    height: auto; 
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 24px;
+    text-align: center;
 }
 
-.click-button:hover {
-    background: #bbb; 
+.game-button:hover {
+    background: #d3d3d3; 
+    transform: scale(1.1); 
 }
 
-.click-button:active {
-    transform: scale(0.95); 
+.game-button:active {
+    transform: scale(0.9); /* Эффект при нажатии */
+    transition: transform 0.1s ease; /* Плавный переход */
 }
-        }
-        .footer {
-            background: #444;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 10px;
-        }
-        .click-button {
-          
-    </style>
-</head>
+.game-stats {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Позволяет выравнивать элементы по центру */
+    align-items: center; /* Центрирует элементы по горизонтали */
+}
+.footer {
+    background: #4a4a4a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
