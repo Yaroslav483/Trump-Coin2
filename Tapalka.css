@@ -33,10 +33,10 @@ body {
     gap: 10px;
 }
 .user-info .avatar {
-    width: 40px; /* Ширина аватарки */
-    height: 40px; /* Высота аватарки */
-    border-radius: 50%; /* Круглая форма */
-    margin-right: 10px; /* Отступ справа от аватарки */
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px;
 }
 .main-container {
     display: flex;
@@ -61,19 +61,19 @@ body {
     text-align: center;
 }
 .game-stats .stats-container {
-    display: flex; /* Устанавливаем флекс-контейнер */
-    justify-content: space-around; /* Распределяем элементы по горизонтали */
+    display: flex; 
+    justify-content: space-around; 
     background: black;
     color: white;
     padding: 20px;
     border-radius: 10px;
-    align-items: center; /* Центрируем элементы по вертикали */
-    gap: 20px; /* Добавляем промежуток между элементами */
+    align-items: center;
+    gap: 20px;
 }
 
 .game-stats .stats-container div {
-    text-align: center; /* Центрируем текст в каждой строке */
-    line-height: 1.5; /* Увеличиваем высоту строки */
+    text-align: center; 
+    line-height: 1.5; 
 }
 .game-button {
     margin-top: 20px;
@@ -95,15 +95,15 @@ body {
 }
 
 .game-button:active {
-    transform: scale(0.9); /* Эффект при нажатии */
-    transition: transform 0.1s ease; /* Плавный переход */
+    transform: scale(0.9);
+    transition: transform 0.1s ease; 
 }
 .game-stats {
     width: 60%;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Позволяет выравнивать элементы по центру */
-    align-items: center; /* Центрирует элементы по горизонтали */
+    flex-direction: column;
+    align-items: center; 
 }
 .footer {
     background: #4a4a4a;
