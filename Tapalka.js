@@ -3,18 +3,18 @@ let coinsPerClick = 20;
 let passiveIncome = 5; // Пассивный доход
 
 const clickButton = document.querySelector('.game-button');
-const totalCoinsDisplay = document.querySelector('.stats-container div:first-child'); // Для отображения в игровом блоке
-const userCoinsDisplay = document.querySelector('.user-info span:last-child'); // Для отображения в верхнем правом углу
+const totalCoinsDisplay = document.querySelector('.stats-container div:first-child'); 
+const userCoinsDisplay = document.querySelector('.user-info span:last-child');
 
 clickButton.addEventListener('click', () => {
     totalCoins += coinsPerClick; 
-    totalCoinsDisplay.innerHTML = `💰 ${totalCoins}<br>Total ClickCoins`; // Обновляем отображение в игровом блоке
-    userCoinsDisplay.innerHTML = `💰 ${totalCoins}`; // Обновляем отображение в верхнем правом углу
+    totalCoinsDisplay.innerHTML = `💰 ${totalCoins}<br>Total ClickCoins`; //  отображение в игровом блоке
+    userCoinsDisplay.innerHTML = `💰 ${totalCoins}`; // отображение в верхнем правом углу
 });
 
-// Функция для пассивного начисления монет
+//  пассивное начисления монет
 setInterval(() => {
     totalCoins += passiveIncome;
-    totalCoinsDisplay.innerHTML = `💰 ${totalCoins}<br>Total ClickCoins`; // Обновляем отображение в игровом блоке
-    userCoinsDisplay.innerHTML = `💰 ${totalCoins}`; // Обновляем отображение в верхнем правом углу
-}, 1000); // Каждые 1000 миллисекунд (1 секунда)
+    totalCoinsDisplay.innerHTML = `💰 ${totalCoins}<br>Total ClickCoins`; //  отображение в игровом блоке
+    userCoinsDisplay.innerHTML = `💰 ${totalCoins}`; //  отображение в верхнем правом углу
+}, 1000); 
