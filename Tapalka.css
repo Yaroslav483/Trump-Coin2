@@ -4,13 +4,39 @@ body {
     margin: 0;
     padding: 0;
 }
+
+button {
+    background-color: gray; /* Default button color */
+    color: black; /* Default text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor on hover */
+    display: flex; /* Align image and text */
+    align-items: center; /* Center items vertically */
+}
+
+button img {
+    margin-right: 5px; /* Space between image and text */
+}
+
+button:hover {
+    background-color: black; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.stats-container {
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #e0e0e0;
-    padding: 10px 20px;
+    background: #E0E0E0; /* Updated background color */
+    padding: 15px 30px; /* Increased padding */
 }
+
 .header .logo {
     font-size: 20px;
     font-weight: bold;
@@ -18,52 +44,85 @@ body {
     background: white;
     border-radius: 5px;
 }
+
 .nav {
     display: flex;
     gap: 20px;
 }
+
 .nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
 .user-info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .user-info .avatar {
     width: 40px; 
     height: 40px; 
     border-radius: 50%; 
     margin-right: 10px;
 }
+
 .main-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
+
 .shop {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
     width: 30%;
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
+
 .shop .item {
+    margin-bottom: 10px; /* Отступ между элементами */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение для названия, описания и цены */
+    align-items: flex-start; /* Выровнять элементы по левому краю */
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
+
+.shop button {
+    margin-left: auto; /* Отталкивает кнопку к правому краю */
+    padding: 10px 15px; /* Increased padding */
+    background-color: rgb(218, 214, 214); /* Set button background color to grey */
+    color: black; /* Set text color to black */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
+}
+
+.shop button:hover {
+    background-color: black; /* Change background to black on hover */
+    color: white; /* Change text color to white on hover */
+}
+
+
+.shop button:hover {
+    background-color: #000000; /* Updated hover color */
+}
+
 .game-stats {
     width: 60%;
     text-align: center;
 }
+
 .game-stats .stats-container {
     display: flex; 
     justify-content: space-around; 
-    background: black;
+    background: #43464D;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -75,19 +134,36 @@ body {
     text-align: center; 
     line-height: 1.5; 
 }
+
+.game-stats .stats-container hr {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Lighter color for separation */
+    margin: 5px 0; /* Reduced margin for closer separation */
+    height: 70px; /* Set height to half */
+}
+
+
+
+
 .game-button {
-    margin-top: 20px;
-    width: 250px;
-    height: 250px;
+    margin: 120px auto; /* Центрируем кнопку */
+    width: 500px; /* Увеличиваем ширину */
+    height: 500px; /* Увеличиваем высоту */
     background: lightgray;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease, transform 0.3s ease;
-    font-size: 24px;
+    font-size: 30px; /* Увеличиваем размер шрифта */
     text-align: center;
 }
+
+.game-button img {
+    border-radius: 50%; /* Make the image circular */
+    width: 100%; /* Ensure the image fills the button */
+    height: 100%; /* Ensure the image fills the button */
+}
+
 
 .game-button:hover {
     background: #d3d3d3; 
@@ -98,17 +174,11 @@ body {
     transform: scale(0.9);
     transition: transform 0.1s ease; 
 }
-.game-stats {
-    width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
+
 .footer {
-    background: #4a4a4a;
+    background: #333; /* Darker background for better contrast */
     color: white;
-    padding: 10px;
+    padding: 15px; /* Increased padding */
     text-align: center;
     margin-top: 20px;
 }
